@@ -4,15 +4,5 @@ jobs:
   build-app:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "17.3.0"
-      - name: "Install Node Modules"
-        run: npm install
-      - name: "Build Project"
-        run: npm run build
-      - name: Setup finished
-        run: echo "Sucessfully Done"
-      - run: npm install -g serve
-      - run: serve -s build
+      - run: sudo apt-get install g++
+      - run: g++ -v
