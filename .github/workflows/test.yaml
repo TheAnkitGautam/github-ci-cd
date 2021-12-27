@@ -4,5 +4,5 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello world!!!!"
-      - run: echo "This is my first github action"
+      - uses: actions/checkout@v2
+      - run: tree
