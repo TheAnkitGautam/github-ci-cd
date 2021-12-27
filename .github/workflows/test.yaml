@@ -14,3 +14,5 @@ jobs:
         run: npm run build
       - name: Setup finished
         run: echo "Sucessfully Done"
+      - run: npm install -g serve
+      - run: serve -s build
