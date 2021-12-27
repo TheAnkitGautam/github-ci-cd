@@ -8,9 +8,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "17.3.0"
-      - name: "Build Project"
-        run: npm run build
       - name: "Install Node Modules"
         run: npm install
-      - name: Setup finished    
+      - name: "Build Project"
+        run: npm run build
+      - name: Setup finished
         run: echo "Sucessfully Done"
